@@ -1,0 +1,27 @@
+common_body:
+    gender: 0
+    head: ''
+    login_token: ''
+    name: ''
+    oid: ''
+    tn_msg: >-
+        y1nLlHCzlwKEfDLgnbAVb4NjyZOM+XZLrp+dJ775fU2FAMmR/VUrVj/pw0OCBYhdEJaQtswm74xAt3xvaQAcPn2V1PBKAPFIkNJRDFxf98LfZDGCMgLzbalQ7VmvHrWK1nzA17X6iwTaPsDEhjYUJaosmg1BRDXczJP/fVagdaSH+N1tFIcUVuJq5Edp9E0AtRu28ki5rp+lty+ezx6sTMeGZYznbBXz0uNdmC5RVyT+KoFE3nr27KSZ4Lx6hyutwhgI3pAl21m0+4BiY+k2k4dG9xsnB008ZC7TDcp8IBVW1a6CJgTcNOhEidf7RG61c8YgZ6lzQH39SqxrnFxWO8uGUTrH0L5Ytzh0zMBeLDlaFqstZDv2zRWXa1+jO4AiCd8ShKdvyucQMIolBSAg9nWxtoSK6O29e0XlZ7aqcOHdLJJ9U/YM56fzGTxe/WEi
+    type: 4
+    ta_device_id: f417385f54e309ea
+    promotion_id: ''
+    open_id: 4C96F4D0A083B60A46217EB2
+    distinct_id: e9b068d6-401a-42f1-8dac-a0fcb5f52247
+    slang: '1'
+    lang: zh_CN
+    versioncode: '457'
+    nlang: '2'
+    app_package_name: in.dradhanus.liveher
+    vname: 8.36_dev1
+    encoding: '1'
+    debug: '1'
+    androidid: 5d3591f5-b150-4579-b838-0950813ee146
+
+common_prams:
+    new_versioncode: '5'
+    debug: '1'
+

@@ -1,0 +1,16 @@
+
+Creatingroom_body:
+  encoding: '1'
+  distinct_id: e9b068d6-401a-42f1-8dac-a0fcb5f52247
+  slang: '1'
+  lang: en_US
+  versioncode: '457'
+  nlang: '0'
+  app_package_name: in.dradhanus.liveher
+  vname: 8.36_dev1
+  debug: '1'
+  androidid:  5d3591f5-b150-4579-b838-0950813ee146
+
+common_prams:
+    new_versioncode: '5'
+    debug: '1'
