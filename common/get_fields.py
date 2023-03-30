@@ -2,6 +2,7 @@ from common.resd_yaml import readyml
 import os
 
 
+
 def get_filed(yml: str, *args):
     """读取yml文件内的参数方法 """
     path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

@@ -7,15 +7,16 @@
 # File      : room_api.py
 # explain   : 房间API相关接口
 
-from api.login.login_api import LoginApi
+from api.login.login_api import iphone_login
 import requests
 from common.get_fields import get_filed
 import time
 
 
-class RoomApi(LoginApi):
+class RoomApi(object):
     def __init__(self):
         super().__init__()
+        self.url = None
         self.commonbody = get_filed("room.yml", "Creatingroom_body")
         self.commonprames = get_filed("room.yml", "common_prams")
         self.new_versioncode = "new_versioncode=" + self.commonprames['new_versioncode']
@@ -64,6 +65,7 @@ class RoomApi(LoginApi):
             "uid": uid
         }
         body.update(self.commonbody)
+        print(body)
         r = requests.post(self.url, json=body)
         return r
 
@@ -119,7 +121,7 @@ class RoomApi(LoginApi):
         :param height:  发送图片的长度
         :return:
         """
-        self.url = self.URL+"/room/new/pic/send?" + self.new_versioncode + '&' + self.debug
+        self.url = self.URL + "/room/new/pic/send?" + self.new_versioncode + '&' + self.debug
         body = {
             "room_id": room_id,
             "token": token,
@@ -134,16 +136,15 @@ class RoomApi(LoginApi):
 
 
 if __name__ == '__main__':
-    login = LoginApi()
-    rust = login.iphone_login("+8613632721415", "950720")
-    token = rust[0]
-    uid = rust[1]
-    roomid = rust[2]
+    rust = iphone_login("+8613632721415", "950720")
+    token = rust.json()['data'].get('token')
+    uid = rust.json()['data'].get('uid')
+    roomid = rust.json()['data'].get('roomId')
     A = RoomApi()
     a = A.Creating_Room(token, uid, roomName="api_test_name", tagId="4", roomType="4")
     print(a.json())
     time.sleep(2)
-    c = A.Mic_Up(room_id=roomid, index=7, token=token, uid=uid)
+    c = A.Mic_Up(room_id=roomid, index=0, token=token, uid=uid)
     print(c.json())
     time.sleep(5)
     v = A.Mic_Down(room_id=roomid, token=token, uid=uid)

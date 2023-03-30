@@ -25,3 +25,19 @@ common_prams:
     new_versioncode: '5'
     debug: '1'
 
+loginparams_info:
+  - - account: '+8613632721415'
+      password: '950720'
+    - code: 0
+      msg: ''
+    - '参数化标题:登录成功'
+  - - account: ' '
+      password: '950720'
+    - code: 1
+      msg: 'params error'
+    - '参数化标题:账号为空登录失败'
+  - - account: '+8613632343434721415'
+      password: '950720'
+    - code: 6001
+      msg: 'Log-in name not exists, please register a log-in name first.'
+    - '参数化标题:账号错误'
